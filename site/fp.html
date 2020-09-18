@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> YOGESH WADEKAR</title>
+<link rel="stylesheet" href="style.css">
+<body bgcolor=#CCFFFF>
+
+<style>
+/*			<!--css part-->
+        <!--this is syntax of providing css functionality to tags using syntax: tagname{property:value;}-->*/
+/* style tag is not neccessary to write if and only if we provide $ <link rel="stylesheet" href="style.css"> $ where style is filename linked in main program */
+p{															/*  THIS WILL ADD COMMENTS IN CSS '<!-->' IS NOT ALLOWED IN CSS */
+color:black;
+font-size:20px;
+
+}															/*this will give pink colour to all the contents in p tag only.other things remains unchanged */
+
+*{
+box-sizing: border-box;       /* this property gets applied to all contents of the program since decalred in "*"  */
+}
+
+.mrgin_top{
+margin-top: 150px;
+}
+
+.for_list_item{
+background-color: white;
+}
+
+#img_float{                     /* positioning element by floating */
+float: right;
+clear:right;
+}
+
+#bg,.bgd{
+width: 100%;
+height: 100px;
+background: url('image.jpg') no-repeat top center;
+background-color: blue;
+color: yellow;
+}
+
+#box {
+background-color: yellow;
+padding: 10px;             /*padding & border takes extra space than width,padding gives space to left & right only where "box-sizing: border-box;" will include padding and border into the width given */
+border: 5px solid black;   /* gives space to all sides */
+width: 50%;
+height: 200px;
+margin-top: 50px;
+overflow: auto;            /* this will give 'scroll=scroling property(top & bottom scroll)','auto=auto property based on page layout' to our contents of Page */
+}
+#content {
+background-color: #fcde55; /* green */
+}
+
+li>a:link,li>a:visited{					/*psudo-classselectors*/
+text-decoration: none;
+background-color: pink;
+border: 1px solid blue;
+display: block;
+width: 200px;
+text-align: center;
+margin-bottom: 1px;
+}
+
+body a:hover,body a:active{
+background-color: yellow;
+color:purple;
+}
+
+li:nth-child(5){
+font-size: 25px;
+}
+a{
+color: #0d8ba1;
+-webkit-transition: all 0.25s ease-out;
+-moz-transition: all 0.25s ease-out;
+transition: all 0.25s ease-out;
+text-decoration: none;
+}
+
+
+h1{
+color:green;
+font-size:50px;
+text-align:center;
+font-width:bold;
+font-style:italic;
+background-color:white;
+opacity:0.9;
+}
+
+#yog{															/* this defination.can be use anywhere in program like a attribute*/
+color:yellow;													/* this is ID SELECTOR in css*/
+}
+
+#lk{															/* this is defination.can be use anywhere in program like a attribute*/
+color:yellow;													/* this is ID SELECTOR in css*/
+}
+
+span,.wadekar{														/* we can group selectors together which use same properties by this way*/
+color:red;													/* this is CLASS SELECTOR ic css declared using "."  */
+}
+
+.pppp{
+color:black;
+text-align:center;
+font-size:25px;
+opacity:0.9;
+background-color:#66FF33;
+}
+</style>
+
+	<h1 id="top" class="mrgin_top">WELCOME</h1>
+
+<p id="bg">						        								<!--Entity reference is given by use of '&entity_name'-->
+   This page is created for a&lt;<b><u><i>STUDY PURPOSE &amp; PRACTICE</b></u></i>&gt; all things learned from coursera.
+   On the source code of this web page all the information regarding tags used and syntax is displayed in comments.	<!--print '<' & '>' signs on screen without considering them as a tag-->
+
+   <a href="http://www.facebook.com" target="_blank" title="title page info"><br><br>					<!--on cliking this link page opens in new tab -->
+   <h4>FACEBOOK</h4></a>
+<a href="http://www.facebook.com" target="_blank" title="image as a link"><img src="fblogo.jpg" height=5% width=10%></a>  <!--on moving cursor over the link it shows title provided in anchor tag-->
+
+
+<br>
+<br>
+<br>
+
+  <div id="yog" class="bgd">*** DIV 1: Some content here ***										<!--new line is placed after the closing DIV tag without BR tag-->
+  <div id="yog">*** DIV 2: Following right after div 1 ***</div>									<!---->
+  <span>*** SPAN 1: Following right after div 2 ***</span>
+  <div>
+    *** DIV 3: Following right after span 1
+    <span>*** SPAN 2: INSIDE div 3 ***</span>
+    Continue content of div 3 ***
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<h1>Links to Sections of The Same Page</h1>
+  <section>
+    <ul style="list-style-type:none">
+     															<!-- Link to every section in the same page -->
+      <li><a href="#section1">#section1</a></li>									<!--# symbol is to be placed before the id of perticular TAG on the same page-->
+      <li><a href="#section2">#section2</a></li>
+      <li><a href="#section3">#section3</a></li>
+      <li><a href="#section4">#section4</a></li>
+      <li><a href="#section5">#section5</a></li>
+      <li><a href="#section6">#section6</a></li>
+    </ul>
+
+  </section>
+<p>FOLLOWING BOX SHOWS THE LIST OF SUBJECTS IN COMPUTER ENFINNEERING.<BR>
+												<!-- BOX in css -->
+<div id="box"><div id="content">
+
+<ol type="1">
+	<li>FE
+		<ul class="for_list_item">
+			<LI>PHYSICS</LI>
+			<LI>CHEMISTRY</LI>
+			<LI>MECHANICS</LI>
+	  </ul>
+	</LI>
+	<li>SE
+		<ul class="for_list_item">
+		  <LI>COA</li>
+			<LI>OOP</LI>
+			<LI>DSA</LI>
+		</ul>
+	</LI>
+	<li>TE
+		<ul class="for_list_item">
+		  <LI>CN</li>
+			<LI>DBMS</LI>
+			<LI>TOC</LI>
+		</ul>
+  </LI>
+	<li>BE
+		<ul class="for_list_item">
+		  <LI>CYBER SECURITY</li>
+			<LI>WEB DESIGNING</LI>
+			<LI>AI</LI>
+		</ul>
+	</LI>
+</ol>
+
+</div>
+</div>
+
+</p>
+
+  <section id="section1">
+												<!-- id attribute of section tag is similar to name of the section-->
+  <h3 class="pppp">Section 1</h3>
+    <p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dignissimos aut quasi
+ aspernatur possimus officia nulla consectetur velit! At, asperiores dolorem. Et iure assumenda,
+laudantium, voluptatibus ex dignissimos, eum quaerat ducimus cupiditate corporis totam. </p>
+  </section>
+
+  <section id="section2">
+    <h3 class="pppp">Section 2</h3>
+    <p class="wadekar">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus debitis voluptatibus 	<!--use of class 'wadekar' defined in style tag of css-->
+facere repellat deserunt sint, beatae optio cupiditate cumque explicabo sapiente, tenetur, minima
+ipsa quasi obcaecati ipsam praesentium tempore. Quam doloribus praesentium, ea quos vitae officiis
+ nesciunt asperiores quasi quas explicabo cupiditate recusandae sed dolorum quia. Error delectus.</p>
+</section>
+  <section id="section3">
+   <h3 class="pppp">Section 3</h3>
+    <p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ut, vel quasi nesciunt
+nisi laboriosam repellendus quod accusantium adipisci veniam voluptatem iure rem voluptate, explicabo
+eaque ex aliquid ipsum distinctio maxime sed nihil quae.</p>
+  </section>
+  <section id="section4">
+ <h3 class="pppp">Section 4</h3>
+    <p class="wadekar">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus culpa, voluptatibus
+obcaecati														<!--use of class 'wadekar' defined in style tag of css-->
+sunt reiciendis, a eveniet provident exercitationem atque, eos minima vero est explicabo rem suscipit
+nisi velit saepe.</p>
+  </section>
+  <section id="section5">
+    <h3 class="pppp">Section 5</h3>
+    <p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur libero, a voluptate, quasi
+rem id! Mollitia nostrum quo in dolorum magnam assumenda, architecto odio expedita atque unde, laudantium
+velit.</p>
+  </section>
+<section id="section6">
+   <h3 class="pppp">Section 6</h3>
+<p class="wadekar">
+ This is section 6.</p>										<!--use of class 'wadekar' defined in style tag of css-->
+    <p id="lk">														<!--use of id selector 'lk' defined in style tag of css-->
+      Back to top: <a href="#top">Back to Top</a>
+    </p>
+
+</p>
+</section>
+
+
+
+<p>
+this is ID SELECTOR tells about the text styling.
+<br>
+<img id="img_float" src="TEXT STYLING IN CSS.png"  height="5%" width="50%">
+</p>
+<br>
+<br>
+<br>
+<p style="clear:both;">
+YOGESH&nbspWADEKAR     &copy copyright
+</p>									 <!--non breaking space-not get wrap the text even after changing screen diamensions.-->
+</body>
+</head>
+</html>
